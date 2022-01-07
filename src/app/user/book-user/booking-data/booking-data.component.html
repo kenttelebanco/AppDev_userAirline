@@ -1,0 +1,31 @@
+<div class="card-book mt-2">
+  <div class="card-body">
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <br><h2>{{ booking.destination }}</h2>   
+      </div>
+      <div class="form-group">
+        <label for="origin">Origin</label>
+        <br><h2>{{ booking.origin }}</h2>
+      </div>
+      <div class="form-group">
+        <label for="bookeddate">Date of Booking</label>
+        <br><h4>{{currentDate | date:'yyyy-MM-dd'}}</h4>
+      </div>
+
+      <label for="gender">Flight Type:</label>
+            <div>
+              <input id="ftype" type="radio" value="One-Way Flight" name="ftype" formControlName="ftype" (change)="changeType($event)">
+              <label id="ftype" for="One-Way"> One-Way Flight</label>
+             <input id="ftype" type="radio" value="Two-Way Flight" name="ftype" formControlName="ftype" (change)="changeType($event)">
+             <label id="ftype" for="Two-Way"> Two-Way Flight</label>
+          </div>
+
+    <div class="mt-3">
+      <button type="submit" class="btn btn-secondary" [disabled]="!submitForm.valid" (click)="openAlertDialog()">Book Flight</button>
+      <button type="submit" class="btn btn-secondary ml-2" (click)="onCancel()" >Cancel</button>
+    </div>
+    </form>
+  </div>
+</div>

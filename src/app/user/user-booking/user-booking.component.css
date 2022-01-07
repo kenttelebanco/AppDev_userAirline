@@ -1,0 +1,18 @@
+.airline-header{
+    background-color: rgb(44, 88, 61);  }
+    
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+  padding: 0%;}
+
+  div.coll{
+    padding: 0% 0% 0% 0%;
+  }
+
+p.current{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(44, 88, 61);
+}

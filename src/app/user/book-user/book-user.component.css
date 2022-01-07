@@ -1,0 +1,8 @@
+      .airline-header{
+        background-color: rgb(44, 88, 61);  }
+        
+        .row {
+          display: grid;
+        grid-template-columns: 1fr 1fr;
+  
+        }

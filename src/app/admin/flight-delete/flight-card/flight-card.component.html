@@ -1,0 +1,35 @@
+<div class="book-card">
+    <div class="card" style="width: 23rem; margin-top: 10px" *ngFor="let user of bookusers$; index as i">
+      
+      <div class="card-header title">
+        <span class="id">{{ user.origin }} -> {{ user.destination }}</span>
+        <span class="status"><b>{{ user.status }}</b></span>
+      </div>
+    
+      <ul class="list-group list-group-flush">
+    
+        <li class="list-group-item">
+          <a>Departure Date: </a>
+          <b>{{user.date}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Departure Time: </a>
+          <b>{{user.dept}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Arrival Time: </a>
+          <b>{{user.arrival}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Airline: </a>
+          <b>{{user.airline}}</b>
+        </li>
+    
+      </ul>
+      <button mat-flat-button color="primary" (click)="onClick(i)">Change Status</button>
+    </div>
+    </div>
+    

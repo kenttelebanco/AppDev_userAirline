@@ -1,0 +1,16 @@
+.airline-header{
+    background-color: rgb(44, 88, 61);  }
+    
+  label#ftype{
+    margin: 10px 10px 10px 10px;
+  }
+  
+  div.card-book{
+    object-fit: contain;
+    background-image: url(https://static7.depositphotos.com/1000422/691/v/600/depositphotos_6919531-stock-illustration-urban-airport.jpg);
+  }
+  
+  div.card-body{
+    border: 2px solid rgba(121, 118, 118, 0.308);
+    background-color: rgba(255, 255, 255, 0.849);
+  }

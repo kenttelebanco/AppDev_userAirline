@@ -1,0 +1,26 @@
+.airline-header{
+  background-image: url('https://s3.eu-west-1.amazonaws.com/originaldiving.assets.d3r.com/images/hero_xlarge/524945-palawan-isalands-header-2.jpg');
+}
+
+div.header-mask{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.card-img-top{
+  background-size: cover;
+  height:170px;
+}
+
+.card-text{
+  margin-top: 20px;
+  color: rgb(44, 43, 43);
+}
+
+.col-6{
+  color: rgb(44, 88, 61);
+}
+
+button{
+  background-color: rgb(44, 88, 61);
+  border: none;
+}

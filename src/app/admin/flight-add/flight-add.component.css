@@ -1,0 +1,10 @@
+.airline-header{
+    background-color: rgb(44, 88, 61); 
+margin-top: 5%; }
+
+.flight-card{
+    width: 50%;
+    margin-left: 30%;
+    border: 2px solid rgb(59, 59, 59);
+    margin-bottom: 5%;
+}

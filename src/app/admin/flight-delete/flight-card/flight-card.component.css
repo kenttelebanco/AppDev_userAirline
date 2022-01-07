@@ -1,0 +1,25 @@
+.title{
+    display:block;
+    color: white;
+    background-color: rgb(44, 88, 61);
+    ;
+}
+
+.button{
+    display:block;
+    color: white;
+    background-color: black;
+}
+
+.title .id{
+    float:left;
+}
+
+div.book-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.status{
+    margin-left: 25%;
+}

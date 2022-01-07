@@ -1,0 +1,53 @@
+<div class="book-card">
+    <div class="card" style="width: 25rem; margin-top: 10px" *ngFor="let user of bookingusers$; index as i" value="bookinguser$.$key">
+      <div class="card-header title">
+        <span class="id">{{ user.origin }} --> {{ user.destination }}</span>
+      </div>
+      <ul class="list-group list-group-flush">
+    
+        <li class="list-group-item">
+          <a>Booked date: </a>
+          <b>{{user.bookeddate | date:'MM-dd-yy'}}</b>
+        </li>
+
+        <li class="list-group-item">
+          <a>Departure date: </a>
+          <b>{{user.date}}</b>
+        </li>
+
+        <li class="list-group-item">
+          <a>Departure Time: </a>
+          <b>{{user.dept}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Arrival Time: </a>
+          <b>{{user.arrival}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Airline: </a>
+          <b>{{user.airline}}</b>
+        </li>
+    
+        <li class="list-group-item">
+          <a>Flight Code: </a>
+          <b>{{user.fcode}}</b>
+        </li>
+    
+        <li class="list-group-item">
+            <a>Flight Type: </a>
+            <b>{{user.type}}</b>
+        </li>
+
+        <li class="list-group-item">
+          <a>Flight Price: </a>
+          <b>PHP {{user.fprice}}</b>
+        </li>
+        
+    
+      </ul>
+      <button mat-flat-button color="warn" [disabled]="pastbooking" (click)="onDelete(user.$key)">Cancel Flight</button>
+    </div>
+    </div>
+    

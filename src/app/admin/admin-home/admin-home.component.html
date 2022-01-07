@@ -1,0 +1,104 @@
+<app-adminnav></app-adminnav>
+
+<body>
+    <div class="container py-3">
+      <div class="airline-header bg-cover">
+        <div class="header-mask py-5 text-center text-white">
+            <h1 class="display-4 font-weight-bold">JOSENIAN AIRLINES</h1>
+            <p class="font-italic mb-4">Stop Searching. Start Traveling. Welcome to Josenian Airlines</p>
+        </div>
+    </div>
+    
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mt-5 mb-3 text-center">
+
+          <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <img class="card-img-top" style="background-image: url('https://www.condor.com/eu/fileadmin/dam/_processed_/8/f/csm_1102_Opt_Flightplan_Abflug_und_Anfkunft_x2_de88e239bf.jpg');">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Airline Schedule</h4>
+              <a class="card-text"><br>View Flight Schedule</a>
+            </div>
+            <div class="card-body">
+              <button type="button" class="w-100 btn btn-lg btn-primary" routerLinkActive="active" routerLink="/sched-user">See Schedule</button>
+            </div>
+          </div>
+        </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <img class="card-img-top" style="background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/211015151831-01-secret-first-class-seats-travel-super-tease.jpg');">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Airline Flights</h4>
+                <a class="card-text"><br>Create Airline Flights</a>
+              </div>
+              <div class="card-body">           
+                <button type="button" class="w-100 btn btn-lg btn-primary" routerLinkActive="active" routerLink="/flight-admin">Create Flight</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <img class="card-img-top" style="background-image: url('https://d3lcr32v2pp4l1.cloudfront.net/Pictures/1024x536/0/9/8/69098_cancelledflightscshutterstock_875266.jpg');">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Airline Status</h4>
+                <a class="card-text"><br>Cancel, Delay, Reactivate Airline Flights</a>
+              </div>
+              <div class="card-body">           
+                <button type="button" class="w-100 btn btn-lg btn-primary" routerLinkActive="active" routerLink="/flight-delete">Change Status</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <img class="card-img-top" style="background-image: url('https://data.whicdn.com/images/310658620/original.jpg');">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">User Bookings</h4>
+                <a class="card-text"><br>See User Bookings</a>
+              </div>
+              <div class="card-body">
+                <button type="button" class="w-100 btn btn-lg btn-primary" routerLinkActive="active" routerLink="/user-booking">View Bookings</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </main>
+    
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; App Dev 2021–2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Flight Schedule</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Flight Bookings</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Accomodations</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Demand Airlines</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>    
+</body>

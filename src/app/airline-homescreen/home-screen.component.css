@@ -1,0 +1,38 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 20% 20% 20% 20%;
+  }
+
+.signin{
+  margin: 0% 0% 0% 10%;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.877);
+}
+
+a.link{
+  color: rgba(24, 59, 255, 0.877);
+}
+
+button{
+  background-color: rgb(44, 88, 61);
+  color: aliceblue;
+}
+
+button :hover{
+    color: white;
+
+}
+
+.airline-header{
+  background-image: url('https://s3.eu-west-1.amazonaws.com/originaldiving.assets.d3r.com/images/hero_xlarge/524945-palawan-isalands-header-2.jpg');
+}
+
+div.header-mask{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+  
+    

@@ -1,0 +1,64 @@
+<app-usernav></app-usernav>
+
+<div class="container py-3">
+
+  <div class="airline-header bg-cover">
+    <div class="header-mask py-5 text-center text-white">
+        <h1 class="display-4 font-weight-bold">Flight Schedule</h1>
+    </div>
+    </div>
+
+<p class="time mt-3">As Of {{today | date:'fullDate'}} {{today | date:'h:mm:ss a'}} (Phillipine Time)</p>
+
+<mat-table #table [dataSource]="dataSource" matSort class="sort">
+
+  <div matColumnDef="date">
+    <td *matHeaderCellDef mat-sort-header>Date</td>
+    <td *matCellDef="let bookusers">{{bookusers.date}}</td>
+  </div>
+
+  <div matColumnDef="code">
+    <td *matHeaderCellDef mat-sort-header>Code</td>
+    <td *matCellDef="let bookusers">{{bookusers.fcode}}</td>
+  </div>
+
+
+  <div matColumnDef="departure">
+    <td *matHeaderCellDef mat-sort-header>Departure</td>
+    <td *matCellDef="let bookusers">{{bookusers.dept}}</td>
+  </div>
+
+  <div matColumnDef="destination">
+    <td *matHeaderCellDef mat-sort-header>Destination</td>
+    <td *matCellDef="let bookusers">{{bookusers.destination}}</td>
+  </div>
+
+  <div matColumnDef="arrival">
+    <td *matHeaderCellDef mat-sort-header>Arrival</td>
+    <td *matCellDef="let bookusers">{{bookusers.arrival}}</td>
+  </div>
+
+  <div matColumnDef="origin">
+    <td *matHeaderCellDef mat-sort-header>Origin</td>
+    <td *matCellDef="let bookusers">{{bookusers.origin}}</td>
+  </div>
+
+  <div matColumnDef="airline">
+    <td *matHeaderCellDef mat-sort-header>Airline</td>
+    <td *matCellDef="let bookusers">{{bookusers.airline}}</td>
+  </div>
+
+  <div matColumnDef="status">
+    <td *matHeaderCellDef mat-sort-header>Status</td>
+    <td *matCellDef="let bookusers">{{bookusers.status}}</td>
+  </div>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  
+</mat-table>
+</div>
+
+
+

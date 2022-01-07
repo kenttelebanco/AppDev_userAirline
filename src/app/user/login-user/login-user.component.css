@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10% 5% 10%;
+  }
+
+.signin{
+  margin: 0% 0% 0% 10%;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.877);
+}
+
+a.link{
+  color: rgba(24, 59, 255, 0.877);
+}
+
+div.card-header{
+  background-color: rgb(44, 88, 61);
+}
+  
+    

@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(44, 88, 61)">
+  <a class="navbar-brand light" routerLink="/">Josenian Airlines</a>
+</nav>
+
+<div class="row">
+  <div class="signin col-3">
+<div class="card">
+  <div class="card-header text-light">
+    Sign In
+  </div>
+  <div class="card-body">
+    <form [formGroup]="signinform">
+      <div class="from-group col-12 mt-2">
+        <label>Email</label>
+        <input class="form-control" required type="email" formControlName="emailsignin" #email>  
+      </div>
+
+      <div class="from-group col-12 mt-3">
+        <label>Password</label>
+        <input class="form-control" required type="password" formControlName="passwordsignin" #password>
+      </div>
+
+      <div class="form-group col-12 mt-3">
+        <button (click)="onSignin(email.value,password.value)" [disabled]="!signinform.valid" routerLinkActive="active" routerLink="/user-home" class="btn btn-primary">Sign In</button>
+      </div>
+    </form>
+  </div>
+</div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header text-light">
+        or Register for Free
+      </div>
+      <div class="card-body">
+        <form class="register-form data-form" [formGroup]="signupform">
+          <div class="from-group col-12 mt-2">
+            <label>Full Name</label>
+            <input class="form-control" type="text" formControlName="name" #nameSignUp>  
+          </div>
+
+          <div class="from-group col-12 mt-2">
+            <label>Email</label>
+            <input class="form-control" type="email" formControlName="email" #emailSignUp>  
+          </div>
+    
+          <div class="from-group col-12 mt-3">
+            <label>Password</label>
+            <input class="form-control"  type="password" formControlName="password" #passwordSignUp>
+          </div>
+
+          <div class="form-check mt-4 ml-3">
+            <input class="form-check-input me-2" type="checkbox" formControlName="checkbox" id="form2Example3c"/>
+              <label class="form-check-label" for="form2Example3">   
+                I agree all statements in <a class="link" href="#!">Terms of service</a>
+              </label>
+          </div>
+
+          <div class="form-group col-12 mt-3">
+            <button (click)="onSignup(emailSignUp.value,passwordSignUp.value)" [disabled]="!signupform.valid" (click)="openAlertDialog()" class="btn btn-primary">Register</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+      </div>
+  </div>
+
